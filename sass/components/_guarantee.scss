@@ -1,0 +1,33 @@
+.guarantee {
+  margin-left: 17rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-left: 1rem;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    &-h2 {
+      text-transform: uppercase;
+      font-weight: 900;
+      padding-bottom: 5rem;
+      @include afterYellow;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding-bottom: 1rem;
+      }
+    }
+    &-pagraph {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  }
+  &__img {
+    height: 20rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      display: none;
+    }
+  }
+}

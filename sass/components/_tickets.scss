@@ -1,0 +1,205 @@
+.tickets {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-left: 2rem;
+  }
+
+  &__header {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    &::after,
+    &::before {
+      content: '';
+      height: 1.5px;
+      width: 40vw;
+      position: absolute;
+      background: $color-grey-light-2;
+      @media only screen and (max-width: $bp-small) {
+        width: 30vw;
+      }
+      @media only screen and (max-width: $bp-extraSmall) {
+        display: none;
+      }
+    }
+    &::after {
+      left: 55%;
+      top: 55%;
+      @media only screen and (max-width: $bp-large) {
+        left: 57%;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        left: 59%;
+      }
+      @media only screen and (max-width: $bp-small) {
+        left: 63%;
+      }
+    }
+    &::before {
+      right: 55%;
+      top: 55%;
+      @media only screen and (max-width: $bp-large) {
+        right: 57%;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        right: 59%;
+      }
+      @media only screen and (max-width: $bp-small) {
+        right: 63%;
+      }
+    }
+  }
+
+  &__icon {
+    transform: translateY(0.4rem);
+    padding-right: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 25%;
+    background-image: linear-gradient(180deg, #050f53 0%, #3c608a 100%);
+    border: 3px solid transparent;
+
+    @media only screen and (max-width: $bp-large) {
+      flex: 2 0 30%;
+      margin-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 2 1 51%;
+      width: 50vw;
+    }
+
+    &:hover {
+      border: 3px solid $color-primary-light;
+      transition: all 0.5s;
+    }
+
+    &-type {
+      width: 100%;
+      background-color: $color-primary-light;
+      color: $color-primary-dark;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 1.5rem;
+      padding: 0.5rem;
+    }
+
+    &-header {
+      color: $color-white;
+      font-size: 2rem;
+      font-weight: 900;
+    }
+
+    &-headerVip {
+      color: $color-primary-light;
+      font-size: 2rem;
+      font-weight: 900;
+    }
+
+    &-oldPrice {
+      color: $color-grey-light-1;
+      opacity: 0.8;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        opacity: 1;
+        background-color: $color-white;
+        top: 45%;
+        left: 15%;
+        height: 2px;
+        width: 4rem;
+        transform: rotate(165deg);
+      }
+    }
+    &-newPrice {
+      color: $color-primary-light;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    &-discount {
+      color: $color-white;
+      text-decoration: underline;
+      padding-bottom: 1rem;
+    }
+    &-doorPrice {
+      color: $color-white;
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+    }
+    &-buy {
+      @include btn;
+    }
+
+    &-list {
+      color: $color-white;
+      font-weight: 700;
+      list-style: none;
+      width: 100%;
+    }
+
+    &-listItem {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-bottom: 1px solid $color-grey-dark-2;
+    }
+  }
+
+  &__info {
+    flex-basis: 33rem;
+    @media only screen and (max-width: $bp-small) {
+      flex-basis: 90vw;
+    }
+  }
+
+  &__img {
+    background: url('../img/NoPath.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 86vw;
+    }
+
+    &-h1 {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    &-span {
+      fill: $color-white;
+      padding: 0.5rem;
+    }
+  }
+}

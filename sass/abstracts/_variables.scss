@@ -1,0 +1,33 @@
+//COLORS
+$color-primary: rgba(10, 28, 51, 1);
+$color-primary2: rgba(72, 92, 134, 1);
+$color-primary-light: #ffdc4e;
+$color-primary-dark: #ac8606;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-blue: #6a6a86;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #ddd;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #133460;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+//SASS variables for media queries
+$bp-largest: 75em; //1200/16
+$bp-large: 68.75em; //1100/16
+$bp-medium: 56.25em; //900/16
+$bp-small: 37.5em; //600/16
+$bp-smallest: 31.25em; //500/16
+$bp-extraSmall: 20.25em;
+
+// @media only screen and (max-width: $bp-smallest) {
+//     font-size: 1rem;
+//   }

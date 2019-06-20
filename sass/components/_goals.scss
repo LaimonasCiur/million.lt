@@ -1,0 +1,84 @@
+.goals {
+  width: 80%;
+  margin: 0 auto;
+  @media only screen and (max-width: $bp-medium) {
+    width: 95vw;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-medium) {
+      width: 95vw;
+    }
+  }
+
+  &__div1 {
+    padding-right: 5rem;
+    flex-basis: 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-basis: 80vw;
+      padding-right: 0;
+      margin-left: 0 auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-basis: 100vw;
+    }
+  }
+
+  &__div2 {
+    padding-right: 5rem;
+    flex-basis: 50%;
+    @media only screen and (max-width: $bp-medium) {
+      flex-basis: 80vw;
+      padding-right: 0;
+      margin-left: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-basis: 100vw;
+    }
+  }
+
+  &__header {
+    margin-left: 3rem;
+    padding: 1.5rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__listItem {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+      width: 50vw;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 90vw;
+    }
+  }
+
+  &__number {
+    width: 4rem;
+    text-align: center;
+    color: $color-primary-dark;
+    margin-right: 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    padding: 1rem;
+    background-color: $color-primary-light;
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.001" height="22.001" viewBox="0 0 22.001 22.001">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ffdc4e;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Simple_icon_time" transform="translate(-313.429 -337.219)">
+    <g id="g1960" transform="translate(313.429 337.219)">
+      <path id="path1948" class="cls-1" d="M193,237.869a11,11,0,1,0,11,11A11.022,11.022,0,0,0,193,237.869Zm0,2.445a8.556,8.556,0,1,1-8.556,8.556A8.542,8.542,0,0,1,193,240.314Z" transform="translate(-182 -237.869)"/>
+      <path id="path1950" class="cls-2" d="M199.484,242.625a1.222,1.222,0,0,0-1.2,1.241v8.384a1.223,1.223,0,0,0,1.872,1.051l4.45-2.731a1.222,1.222,0,1,0-1.28-2.082l-2.6,1.585v-6.207a1.222,1.222,0,0,0-1.241-1.241Z" transform="translate(-188.331 -239.718)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+AuthName "million.lt statistics"
+AuthType Basic
+AuthUserFile /home/million/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

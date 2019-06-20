@@ -1,0 +1,15 @@
+@import './abstracts/variables';
+@import './abstracts/base';
+@import './abstracts/mixins';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/goals';
+@import './components/information';
+@import './components/video';
+@import './components/tickets';
+@import './components/gallery';
+@import './components/guarantee';
+@import './components/success';
+@import './components/buyNow';

@@ -1,0 +1,59 @@
+.information {
+  margin-top: 5rem;
+  background-color: hsl(47, 79%, 70%);
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-medium) {
+      width: 95vw;
+    }
+  }
+
+  &__img {
+    height: 35rem;
+    flex-basis: 15%;
+    border: 5px solid $color-white;
+    margin-right: 5rem;
+    transform: translateY(2rem);
+
+    @media only screen and (max-width: $bp-medium) {
+      transform: translateY(0);
+      margin: 0 auto;
+      transform: translateY(1rem);
+    }
+  }
+
+  &__block {
+    flex-basis: 70%;
+    @media only screen and (max-width: $bp-medium) {
+      flex-basis: 100%;
+      padding: 2rem;
+    }
+
+    &-title {
+      color: $color-primary-dark;
+      font-size: 2rem;
+      @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+      }
+    }
+
+    &-name {
+      font-size: 3rem;
+      text-transform: uppercase;
+      @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+      }
+    }
+
+    &-info {
+      color: hsl(48, 76%, 32%);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+  }
+}

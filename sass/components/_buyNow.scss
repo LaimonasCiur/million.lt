@@ -1,0 +1,194 @@
+.transform {
+  transform: translateY(-7rem);
+  @media only screen and (max-width: $bp-small) {
+    transform: translateY(0rem);
+  }
+}
+
+.buyNow {
+  width: 65vw;
+  margin: 0 auto;
+  -webkit-box-shadow: -2px 3px 30px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 30px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 3px 30px -1px rgba(0, 0, 0, 0.75);
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 90vw;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 95vw;
+  }
+
+  &__logo {
+    width: 10rem;
+    height: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 5rem;
+      height: 5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 3rem;
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid $color-white;
+  }
+  &__content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: $color-secondary-dark;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+
+    &-h2 {
+      color: $color-white;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+    }
+    &-h1 {
+      color: $color-primary-light;
+      font-weight: 900;
+      font-size: 3rem;
+      margin-left: 3rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__type {
+    padding-top: 2.06rem;
+    padding-bottom: 2.06rem;
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary-light;
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 2.05rem;
+      padding-bottom: 2.05rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+    @media only screen and (max-width: $bp-extraSmall) {
+      padding-top: 2.2rem;
+      padding-bottom: 2.2rem;
+    }
+    &-h2 {
+      padding-left: 5rem;
+      padding-right: 5rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+    &-icon {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @media only screen and (max-width: $bp-small) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+    }
+  }
+}
+
+.video__content.buyNow {
+  border: 5px solid $color-white;
+}
+
+#buyNow__info-span {
+  font-size: 1.5rem;
+  height: 10rem;
+  width: 10rem;
+  transform: translateX(-5px);
+  padding: 0.5rem;
+}
+
+.ticket__container {
+  background: url('../img/Group\ 49.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+  border: 5px solid $color-white;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#noBorder {
+  border: none;
+  color: $color-white;
+}
+
+.ticket__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  @media only screen and (max-width: $bp-small) {
+    width: 65vw;
+    margin: 0 auto;
+  }
+}
+
+#red {
+  color: red;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    opacity: 1;
+    background-color: $color-white;
+    top: 45%;
+    left: 10%;
+    height: 2px;
+    width: 4rem;
+    transform: rotate(165deg);
+  }
+}
+
+.ticket__content-span {
+  color: $color-primary-light;
+  padding-left: 0.5rem;
+}
+
+.tickets__img-h1 {
+  @media only screen and (max-width: $bp-largest) {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+#marginTop {
+  margin-top: -5rem;
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 0rem;
+  }
+}

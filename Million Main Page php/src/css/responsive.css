@@ -1,0 +1,181 @@
+@media only screen and (min-width: 300px) and (max-width: 325px) {
+    .panels { margin-top: -25%; }
+}
+
+@media only screen and (min-width: 324px) and (max-width: 426px) {
+    .panels { margin-top: -20%; }
+    .footContacts li img { left: 3em; }
+}
+
+@media only screen and (min-width: 290px) and (max-width: 768px) {
+    .bookSteps ul { display: block; }
+    .teacherInfo {
+        width: 100%;
+        left: 0;
+    }
+    .teacher img {
+        width: 20%;
+        top: 0;
+        border: 0; 
+    }
+    .teacher {
+        padding: 0 0 4em;
+    }
+    .bookTitle {
+        font-size: 1.5em;
+    }
+    .reservInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .bookingDetail {
+        display: flex;
+        flex-direction: column;
+    }
+    .consultate {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .reservation {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .reservInfo .item {
+        margin-right: 0;
+        margin: .5em 0;
+    }
+    .buyPlace {
+        display: inherit;
+    }
+    .biography {
+        display: block;
+    }
+    .mainContent {
+        display: block;
+        display: -ms-block;
+        display: block;
+    }
+    .incoming img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+    .panels { margin-top: -2%; }
+}
+
+@media only screen and (max-width: 768px) {
+    .panels, .books, .aboutThis { display: block; }
+    .panels { margin-top: -7%; }
+    .panel-content h1 { margin-top: .5em; }
+    .width-alt, .width { width: 90%; }
+    .panel-switch, .panel-content h1 { white-space: normal; }
+    .panel-content, .panel-first, .panel-second { padding: .5em; }
+    .mokymai span:before, .mokymai span:after, .aboutThis img { display: none; }
+    .logo { width: 50%; }
+    .bookReview { overflow: -webkit-paged-x; }
+    
+    .header { 
+        background-size: cover;
+        height: 120px;
+    }
+        
+    .footContacts li {
+        display: block;
+        margin: 1em;
+    }
+    
+    .footContacts li img {
+        float: left;
+        position: relative;
+        margin-right: 0px;
+    }
+
+    .books img {
+        height: 250px !important;
+        margin-bottom: 1em;
+    }
+
+    #menu-icon {
+        display: inline-block;
+        color: #fff;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #000;
+        right: 2.8em;
+        width: 40%;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: .5em 0;
+        margin: 0;
+    }
+    
+    .bookReview { 
+        overflow: -webkit-paged-x; 
+        text-align: center;
+    }
+    
+    .bookSteps {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    .header { background-size: cover; }
+    .panel-content form a { padding: .731em .1em; }
+    .header { height: 120px; }
+    .width-alt { width: 80%; }
+    .panel-switch, .panel-content h1 { white-space: normal; }
+    .panel-content { padding: .5em; }
+    .panel-first, .panel-second { padding: .5em; }
+
+    .footContacts li img {
+        float: left;
+        left: 17em;
+    }
+    
+    .panels {
+        margin-top: -5%;
+        display: grid;
+    }
+
+    .panel-content h1 {
+        margin-top: .5em;
+        margin-bottom: .9em;
+    }
+    
+    .bookReview {
+        overflow: -webkit-paged-x;
+        text-align: inherit;
+    }
+    
+    .bookSteps {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .teacher {
+        padding: 0 0 4em;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .header { background-size: cover; }
+}
+
+@media only screen and (min-width: 769px) {
+    .show_Desktop { display: block; }
+}

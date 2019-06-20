@@ -1,0 +1,113 @@
+.gallery {
+  &__content {
+    display: flex;
+  }
+
+  &__standart {
+    height: 10rem;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(90deg, #3c608a 0%, #050f53 100%);
+
+    &-buy {
+      @include btn;
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0;
+        font-weight: 0;
+        margin-bottom: 0rem;
+      }
+    }
+    &-info {
+      text-align: center;
+    }
+    &-type {
+      color: $color-white;
+      font-size: 2.75rem;
+      font-weight: 900;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1rem;
+        font-weight: 0;
+      }
+    }
+    &-price {
+      color: $color-primary-light;
+      font-weight: 900;
+      margin-top: -2.25rem;
+      font-size: 2.75rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: -1rem;
+      }
+    }
+  }
+
+  &__vip {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-primary-light;
+    height: 10rem;
+    // -webkit-clip-path: polygon(0 0, 45% 0, 75% 100%, 0% 100%);
+    // clip-path: polygon(0 0, 110% 0, 110% 150%, 5.5% 150%);
+    &-buy {
+      @include btn;
+      color: $color-primary-dark;
+      border: 2px solid $color-primary-dark;
+
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0;
+        font-weight: 0;
+        margin-bottom: 0rem;
+      }
+      &:hover {
+        color: $color-white;
+        border: 2px solid $color-white;
+      }
+    }
+    &-info {
+      text-align: center;
+    }
+    &-type {
+      color: $color-white;
+      font-weight: 900;
+      font-size: 2.75rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1rem;
+        font-weight: 0;
+      }
+    }
+    &-price {
+      color: $color-primary-dark;
+      font-weight: 900;
+      margin-top: -2.25rem;
+      font-size: 2.75rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: -1rem;
+      }
+    }
+  }
+
+  &__img {
+    height: 25rem;
+    width: 100%;
+    @media only screen and (max-width: $bp-medium) {
+      height: 20rem;
+    }
+  }
+}
